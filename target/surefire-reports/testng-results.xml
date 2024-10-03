@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-10-03T17:16:04 IST" name=" Master Suite" finished-at="2024-10-03T17:16:40 IST" duration-ms="36255">
+    <groups>
+    </groups>
+    <test started-at="2024-10-03T17:16:04 IST" name="Test" finished-at="2024-10-03T17:16:40 IST" duration-ms="36255">
+      <class name="testCases.TC003_Login_DataDrivenTest">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC003_Login_DataDrivenTest@6fb365ed]" started-at="2024-10-03T17:16:04 IST" name="setUp" finished-at="2024-10-03T17:16:26 IST" duration-ms="21644" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="Verify_LoginDDT(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC003_Login_DataDrivenTest@6fb365ed]" started-at="2024-10-03T17:16:28 IST" name="Verify_LoginDDT" data-provider="LoginDataFromRow" finished-at="2024-10-03T17:16:36 IST" duration-ms="7724" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[kabbadi@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Karthic@123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Valid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_LoginDDT -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC003_Login_DataDrivenTest@6fb365ed]" started-at="2024-10-03T17:16:36 IST" name="tearDown" finished-at="2024-10-03T17:16:40 IST" duration-ms="3969" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC003_Login_DataDrivenTest -->
+    </test> <!-- Test -->
+  </suite> <!--  Master Suite -->
+</testng-results>
