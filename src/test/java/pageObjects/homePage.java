@@ -23,6 +23,7 @@ public class homePage extends basePage {
 	@FindBy(xpath = "//a[normalize-space()='Login']")
 	WebElement lnkLogin;
 	
+	
 	public void clickMyAccount() throws Throwable
 	{
 		//uc.waitForElementToBeVisible(driver, lnkMyAccount, 50);
@@ -31,6 +32,7 @@ public class homePage extends basePage {
 		//driver.navigate().refresh();
 		//uc.waitForElementToBeVisible(driver, lnkDropDown, 50);
 		lnkMyAccount.click();
+		
 	}
 	
 	public void clickRegister()

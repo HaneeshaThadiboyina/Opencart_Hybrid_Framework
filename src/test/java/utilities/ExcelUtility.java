@@ -37,17 +37,7 @@ public class ExcelUtility
 		return rowcount;
 	}
 	
-	
-	public int getPerticularRowCount(String sheetName,int row) throws IOException
-	{
-		fi=new FileInputStream(path);
-		workbook=new XSSFWorkbook(fi);
-		sheet=workbook.getSheet(sheetName);
-		int rowcount=row;
-		workbook.close();
-		fi.close();
-		return rowcount;
-	}
+
 
 	public int getCellCount(String sheetName, int rownum) throws IOException {
 		fi=new FileInputStream(path);

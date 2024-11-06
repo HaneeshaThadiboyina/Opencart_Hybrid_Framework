@@ -1,7 +1,9 @@
 package testBase;
 
 import java.io.File;
+
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
@@ -20,24 +22,26 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 
+import io.cucumber.java.Before;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseClass {
 	public static WebDriver driver; // keep static (to stop the driver conflict) because whenever we create an object of the class then it creates mutiple drivers and it will create conflict.
 	public Logger logger;//Log4j
 	public Properties P;
-	
+
 	@BeforeClass(groups = {"Sanity", "Regression", "Master"})
 	@Parameters({"os","browser"})
 	public void setUp(String os, String br) throws IOException 
 	{
 		//loading cofig.properties file
-		FileInputStream file = new FileInputStream("./src//test//resources//config.properties");
+		FileInputStream propfile = new FileInputStream("./src//test//resources//config.properties");
 		//FileReader file = new FileReader("Opencart_Hybrid_Framework\\src\\test\\resources\\config.properties");
 		P = new Properties();
-		P.load(file);
+		P.load(propfile);
 				
 		//calling logger method here
 		logger=LogManager.getLogger(this.getClass());

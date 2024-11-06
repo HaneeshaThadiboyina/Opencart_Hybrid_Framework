@@ -2,53 +2,46 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-03T17:16:04 IST" name=" Master Suite" finished-at="2024-10-03T17:16:40 IST" duration-ms="36255">
+  <suite started-at="2024-11-02T12:00:44 IST" name="Suite" finished-at="2024-11-02T12:01:02 IST" duration-ms="18537">
     <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.TestRegistrationRunner@68be8808]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2024-10-03T17:16:04 IST" name="Test" finished-at="2024-10-03T17:16:40 IST" duration-ms="36255">
-      <class name="testCases.TC003_Login_DataDrivenTest">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC003_Login_DataDrivenTest@6fb365ed]" started-at="2024-10-03T17:16:04 IST" name="setUp" finished-at="2024-10-03T17:16:26 IST" duration-ms="21644" status="PASS">
+    <test started-at="2024-11-02T12:00:44 IST" name="Test" finished-at="2024-11-02T12:01:02 IST" duration-ms="18537">
+      <class name="TestRunner.TestRegistrationRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:TestRunner.TestRegistrationRunner@68be8808]" started-at="2024-11-02T12:00:44 IST" name="setUpClass" finished-at="2024-11-02T12:00:45 IST" duration-ms="1071" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[windows]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
+                <![CDATA[org.testng.TestRunner@3380ca3d]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="Verify_LoginDDT(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC003_Login_DataDrivenTest@6fb365ed]" started-at="2024-10-03T17:16:28 IST" name="Verify_LoginDDT" data-provider="LoginDataFromRow" finished-at="2024-10-03T17:16:36 IST" duration-ms="7724" status="PASS">
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.TestRegistrationRunner@68be8808]" started-at="2024-11-02T12:00:45 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-02T12:01:02 IST" duration-ms="17009" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[kabbadi@gmail.com]]>
+                <![CDATA["Successful login with valid credentials"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Karthic@123]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Valid]]>
+                <![CDATA["Account registration"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verify_LoginDDT -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC003_Login_DataDrivenTest@6fb365ed]" started-at="2024-10-03T17:16:36 IST" name="tearDown" finished-at="2024-10-03T17:16:40 IST" duration-ms="3969" status="PASS">
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:TestRunner.TestRegistrationRunner@68be8808]" started-at="2024-11-02T12:01:02 IST" name="tearDownClass" finished-at="2024-11-02T12:01:02 IST" duration-ms="57" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testCases.TC003_Login_DataDrivenTest -->
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- TestRunner.TestRegistrationRunner -->
     </test> <!-- Test -->
-  </suite> <!--  Master Suite -->
+  </suite> <!-- Suite -->
 </testng-results>
