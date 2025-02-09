@@ -1,2 +1,4 @@
 *.html linguist-detectable=false
 *.css linguist-detectable=false
+*.javascript linguist-detectable=false
+*.Gherkin linguist-detectable=false
